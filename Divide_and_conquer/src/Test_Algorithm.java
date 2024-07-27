@@ -1,3 +1,5 @@
+import java.util.Map;
+
 public class Test_Algorithm {
 
     public static void main(String args[]) {
@@ -11,15 +13,17 @@ public class Test_Algorithm {
 //        int x = 3;
 //        int k1 = Power.pow(num, x);
 //        System.out.println(k1);
-        int [] A = {10,30,4,10,40};
-
-        int index = LinearSearch.Ls(A,30);
-
-        System.out.println(index);
-
-
-
+//        int [] A = {10,30,4,10,40};
 //
+//        int index = LinearSearch.Ls(A,30);
+//
+//        System.out.println(index);
+    int A[] = {10, 20, 30, 40, 50};
+        Straight_Max_Min.Min_Max result = Straight_Max_Min.min_max ( A );
+
+      System.out.println (result.max);
+      System.out.println (result.min);
+
     }
 
 }

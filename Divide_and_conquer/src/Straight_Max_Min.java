@@ -1,11 +1,10 @@
-import java.util.Scanner;
-public class Staight_Max_Min {
+public class Straight_Max_Min {
 
      static class Min_Max{
          int max;
         int min;
     }
-    public Min_Max min_max(int []A){
+    public static Min_Max min_max(int []A){
          int max=A[0];
          int min=A[0];
 
