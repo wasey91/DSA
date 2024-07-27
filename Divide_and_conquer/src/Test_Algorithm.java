@@ -1,9 +1,8 @@
 public class Test_Algorithm {
-    public static void main(String[] args) {
-        int A[] = {12,6,8,9,10,6};
-        int x = LinearSearch.Ls(A,4);
-        System.out.println(x);
+    public static void main(String args[]) {
+        int arr[] = {10, 20, 30, 40, 50};
+        int key = 30;
+        int last = arr.length - 1;
+        BinarySearch.binarySearch(arr, 0, last, key);
     }
 }
-
-
