@@ -7,10 +7,19 @@ public class Test_Algorithm {
 //        BinarySearch.binarySearch(arr, 0, last, key);
 //    }
 
-        int num = 10;
-        int x = 3;
-        int k1 = Power.pow(num, x);
-        System.out.println(k1);
+//        int num = 10;
+//        int x = 3;
+//        int k1 = Power.pow(num, x);
+//        System.out.println(k1);
+        int [] A = {10,30,4,10,40};
 
+        int index = LinearSearch.Ls(A,30);
+
+        System.out.println(index);
+
+
+
+//
     }
+
 }
