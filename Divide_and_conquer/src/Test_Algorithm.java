@@ -40,19 +40,23 @@ public class Test_Algorithm {
 
 
 
-        int a[] = { 3,40,50,60,5,70,7, };
-        int n = a.length;
-        MergeSort m1 = new MergeSort();
-        System.out.println("\nBefore sorting array elements are - ");
-        m1.printArray(a, n);
-        m1.mergeSort(a, 0, n - 1);
-        System.out.println("\nAfter sorting array elements are - ");
-        m1.printArray(a, n);
-        System.out.println("");
+//        int a[] = { 3,40,50,60,5,70,7, };
+//        int n = a.length;
+//        MergeSort m1 = new MergeSort();
+//        System.out.println("\nBefore sorting array elements are - ");
+//        m1.printArray(a, n);
+//        m1.mergeSort(a, 0, n - 1);
+//        System.out.println("\nAfter sorting array elements are - ");
+//        m1.printArray(a, n);
+//        System.out.println("");
 
 
 
 
+
+        }
     }
 
-}
+
+
+
