@@ -15,13 +15,11 @@ public class Test_Algorithm {
 //        System.out.println(k1);
 
 
-
 //        int [] A = {10,30,4,10,40};
 //
 //        int index = LinearSearch.Ls(A,30);
 //
 //        System.out.println(index);
-
 
 
 //
@@ -39,7 +37,6 @@ public class Test_Algorithm {
 //        System.out.println(mm.min);
 
 
-
 //        int a[] = { 3,40,50,60,5,70,7, };
 //        int n = a.length;
 //        MergeSort m1 = new MergeSort();
@@ -52,10 +49,22 @@ public class Test_Algorithm {
 
 
 
+            int a[] = {13, 18, 27, 2, 19, 25};
+            int n = a.length;
+            System.out.println("\nBefore sorting array elements are - ");
+            QuickSort q1 = new QuickSort();
+            q1.printArr(a, n);
+            q1.quick(a, 0, n - 1);
+            System.out.println("\nAfter sorting array elements are - ");
+            q1.printArr(a, n);
+            System.out.println();
 
 
         }
+
+
     }
+
 
 
 
