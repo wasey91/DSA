@@ -49,7 +49,7 @@ public class Test_Algorithm {
 
 
 
-            int a[] = {13, 18, 27, 2, 19, 25};
+            int a[] = {59,50,70,79,9,80,6};
             int n = a.length;
             System.out.println("\nBefore sorting array elements are - ");
             QuickSort q1 = new QuickSort();
