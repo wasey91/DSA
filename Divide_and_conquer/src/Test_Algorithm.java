@@ -37,27 +37,27 @@ public class Test_Algorithm {
 //        System.out.println(mm.min);
 
 
-//        int a[] = { 3,40,50,60,5,70,7, };
-//        int n = a.length;
-//        MergeSort m1 = new MergeSort();
-//        System.out.println("\nBefore sorting array elements are - ");
-//        m1.printArray(a, n);
-//        m1.mergeSort(a, 0, n - 1);
-//        System.out.println("\nAfter sorting array elements are - ");
-//        m1.printArray(a, n);
-//        System.out.println("");
+      int a[] = { 3,40,50,60,5,70,7, };
+        int n = a.length;
+       MergeSort m1 = new MergeSort();
+        System.out.println("\nBefore sorting array elements are - ");
+       m1.printArray(a, n);
+       m1.mergeSort(a, 0, n - 1);
+       System.out.println("\nAfter sorting array elements are - ");
+      m1.printArray(a, n);
+       System.out.println("");
 
 
 
-            int a[] = {59,50,70,79,9,80,6};
-            int n = a.length;
-            System.out.println("\nBefore sorting array elements are - ");
-            QuickSort q1 = new QuickSort();
-            q1.printArr(a, n);
-            q1.quick(a, 0, n - 1);
-            System.out.println("\nAfter sorting array elements are - ");
-            q1.printArr(a, n);
-            System.out.println();
+//            int a[] = {59,50,70,79,9,80,6};
+//            int n = a.length;
+//            System.out.println("\nBefore sorting array elements are - ");
+//            QuickSort q1 = new QuickSort();
+//            q1.printArr(a, n);
+//            q1.quick(a, 0, n - 1);
+//            System.out.println("\nAfter sorting array elements are - ");
+//            q1.printArr(a, n);
+//            System.out.println();
 
 
         }

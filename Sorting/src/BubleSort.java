@@ -1,5 +1,5 @@
 public class BubleSort {
-    static void print(int a[])
+   static  void  print(int a[])
     {
         int n = a.length;
         int i;
@@ -8,7 +8,7 @@ public class BubleSort {
         }
     }
 
-    static void bubbleSort(int a[])
+   static public void bubbleSort(int a[])
     {
         int n = a.length;
         int i, j, temp;

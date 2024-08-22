@@ -22,10 +22,10 @@ public class Product_Array {
 
     public static void main(String[] args)
     {
-        Product_Array pa = new  Product_Array();
+
         int arr[] = { 10, 3, 5, 6, 2 };
         int nums = arr.length;
-         int[] ans = pa.productExceptSelf(arr);
+         int[] ans = productExceptSelf(arr);
         System.out.println("The product array is : " + ans );
     }
 }
