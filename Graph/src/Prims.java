@@ -68,14 +68,14 @@ public class Prims {
         Edge e15 = new Edge(40, 4, 2);
         Edge e16 = new Edge(20, 4, 3);
 
-        graph[4] = Node4;
+        graph[4]  = Node4;
 
         Prims prims = new Prims();
         prims.primsalgo(graph);
     }
 
     public void primsalgo(List<Edge>[] graph) {
-        boolean[] vis = new boolean[graph.length];
+        boolean[] visit = new boolean[graph.length];
         PriorityQueue<Edge> pq = new PriorityQueue<>();
         int start = 0;
         pq.add(new Edge(start, start, 0));
@@ -85,17 +85,19 @@ public class Prims {
 
             Edge cur = pq.poll();
 
-            int u = cur.destination;
+            int vertex = cur.destination;
 
-            if (vis[u]) {
+            if (visit[vertex]) {
                 continue;
             }
 
             ans =ans+ cur.weight;
-            vis[u] = true;
+            visit[vertex] = true;
 
-            for (Edge edge : graph[u]) {
-                if (!vis[edge.destination]) {
+            for (int i = 0; i < graph[vertex].size (); i++) {
+
+                Edge edge = (Edge) graph[vertex].get ( i );
+                if (!visit[edge.destination]) {
                     pq.add(edge);
                 }
             }
