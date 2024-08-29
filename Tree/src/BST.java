@@ -8,7 +8,7 @@ public class BST {
 
         Node root;
 
-        public static void main(String[] args) {
+        public static void main(String[] args)  {
 
 
             Node n1 = new Node(10);

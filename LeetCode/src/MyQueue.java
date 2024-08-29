@@ -1,8 +1,8 @@
 
    import java.util.*;
 class MyQueue {
-        public Stack<Integer> input = new Stack<>();
-        public Stack<Integer> output = new Stack<>();
+        public Stack<Integer> input =    new    Stack<>();
+        public Stack<Integer> output =    new Stack<>();
         public void push(int x) {
             input.push(x);
         }
