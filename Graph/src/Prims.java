@@ -20,10 +20,6 @@ public class Prims {
 
     public static void main(String[] args) {
         List<Edge>[] graph = new ArrayList[5];
-        for (int i = 0; i < graph.length; i++) {
-            graph[i] = new ArrayList<>();
-        }
-
 
         List<Edge> Node0= new ArrayList<>();
 
@@ -31,6 +27,8 @@ public class Prims {
         Edge e2 = new Edge(80, 0,  2);
 
 
+        Node0.add(e1);
+        Node0.add(e2);
         graph[0]  = Node0;
 
         List<Edge> Node1 = new ArrayList<>();
@@ -41,6 +39,13 @@ public class Prims {
         Edge e5 = new Edge(50, 1, 4);
         Edge e6 = new Edge(30, 1, 3);
 
+
+        Node1.add(e3);
+        Node1.add(e4);
+        Node1.add(e5);
+        Node1.add(e6);
+
+
         graph[1]  = Node1;
 
         List<Edge> Node2 = new ArrayList<>();
@@ -49,6 +54,13 @@ public class Prims {
         Edge e8 =  new Edge(80, 2, 0);
         Edge e9 =  new Edge(10, 2, 3);
         Edge e10 = new Edge(40, 2, 4);
+
+
+        Node2.add(e7);
+        Node2.add(e8);
+        Node2.add(e9);
+        Node2.add(e10);
+
 
         graph[2] = Node2;
 
@@ -59,6 +71,10 @@ public class Prims {
         Edge e12 = new Edge(60, 3, 2);
         Edge e13 = new Edge(20, 3, 4);
 
+        Node3.add(e11);
+        Node3.add(e12);
+        Node3.add(e13);
+
         graph[3] = Node3;
 
         List<Edge> Node4 = new ArrayList<>();
@@ -68,6 +84,9 @@ public class Prims {
         Edge e15 = new Edge(40, 4, 2);
         Edge e16 = new Edge(20, 4, 3);
 
+        Node4.add(e14);
+        Node4.add(e15);
+        Node4.add(e16);
         graph[4]  = Node4;
 
         Prims prims = new Prims();
