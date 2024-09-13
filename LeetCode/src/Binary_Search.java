@@ -1,5 +1,5 @@
 public class Binary_Search {
-        public int search(int[] nums, int target) {
+        public static int search(int[] nums, int target) {
             int mid = 0;
             int i = 0;
             int j = nums.length - 1;
@@ -21,11 +21,11 @@ public class Binary_Search {
 
     public static void main(String args[])
     {
-        Binary_Search ob = new Binary_Search();
+
         int arr[] = { 2, 3, 4, 10, 40 };
         int n = arr.length;
         int x = 10;
-        int result = ob.search(arr, x);
+        int result = search(arr, x);
         if (result == -1)
             System.out.println(
                     "Element is not present in array");

@@ -1,12 +1,10 @@
-
-import java.util.LinkedList;
+ import java.util.LinkedList;
 import java.util.Queue;
 
-    class MinHeap {
+    class Min_Heap {
         public Node root;
 
-        public MinHeap() {
-
+        public Min_Heap() {
             this.root = null;
         }
 
@@ -40,8 +38,6 @@ import java.util.Queue;
             }
         }
 
-
-
         public void heapifyUp(Node node) {
             while (node.parent != null && node.value < node.parent.value) {
                 swap(node, node.parent);
@@ -55,50 +51,6 @@ import java.util.Queue;
             a.value = b.value;
             b.value = temp;
         }
-        public void heapify(Node node) {
-            Node smallest = node;
-
-            if (node.left != null && node.left.value < node.value) {
-                smallest = node.left;
-            }
-
-            if (node.right != null && node.right.value < smallest.value) {
-                smallest = node.right;
-            }
-
-            if (smallest != node) {
-                swap(node, smallest);
-                heapify(smallest);
-            }
-        }
-
-        public void deleteMin() {
-            if (root == null) {
-                System.out.println("Heap is empty");
-                return;
-            }
-
-
-            Node lastNode = (root);
-
-            if (lastNode == root) {
-                root = null;
-                return;
-            }
-
-
-            swap(lastNode, root);
-
-
-            if (lastNode.parent.left == lastNode) {
-                lastNode.parent.left = null;
-            } else {
-                lastNode.parent.right = null;
-            }
-
-            heapify(root);
-        }
-
 
         public void printHeap() {
             if (root == null) return;
@@ -119,27 +71,18 @@ import java.util.Queue;
         }
 
 
-      public static void main(String[] args) {
+        public static void main(String[] args) {
             MinHeap minHeap = new MinHeap();
 
+            minHeap.insert(10);
+            minHeap.insert(5);
+            minHeap.insert(3);
+            minHeap.insert(8);
+            minHeap.insert(2);
 
+            System.out.println("Heap elements after insertion:");
             minHeap.printHeap();
-          minHeap.insert(10);
-          minHeap.insert(20);
-          minHeap.insert(5);
-          minHeap.insert(6);
-          minHeap.insert(2);
-          minHeap.insert(8);
-          minHeap.insert(15);
-
-          System.out.println("Heap before deletion:");
-          minHeap.printHeap();
-
-          minHeap.deleteMin();
-
-          System.out.println("Heap after deletion:");
-          minHeap.printHeap();
-      }
+        }
     }
 
 
