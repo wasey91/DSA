@@ -15,7 +15,7 @@ public class Floodfill {
         return image;
     }
 
-    private void floodfill(int[][] image, int i, int j, int rows, int cols, int oldColor, int newColor) {
+    public void floodfill(int[][] image, int i, int j, int rows, int cols, int oldColor, int newColor) {
 
         if ( i< 0 || j < 0 || i >= rows || j >= cols || image[i][j] != oldColor) {
             return;
