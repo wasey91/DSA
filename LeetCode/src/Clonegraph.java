@@ -1,6 +1,5 @@
 import java.util.*;
 
-public class Clonegraph {
 
 // Definition for a Node.
 class Node {
@@ -21,7 +20,7 @@ class Node {
 }
 
 
-    class Solution {
+    class Clonegraph {
         public Node cloneGraph(Node node) {
             if(node == null) return null;
             Map<Node, Node> map = new HashMap<>();
@@ -46,4 +45,4 @@ class Node {
     }
 
 
-}
+
